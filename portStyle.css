@@ -150,7 +150,6 @@ main{
     .aboutMe, .mySkills, .myProjects, .contactMe{
         padding: 1rem 1rem;
     }
-}
     .aboutMe{
         flex-direction: column-reverse;
         text-align: center;
