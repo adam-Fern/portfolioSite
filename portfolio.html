@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portStyle.css">
+    <script defer src="portScript.js"></script>
+    <title>Adam's Portfolio</title>
+</head>
+<body>
+    <header id="mainHeader" class="lightElement">
+        <h1>Adam Fern</h1>
+        <nav class="linkNav">
+            <a class="linkNavA" href="#aboutSection">About Me</a>
+            <a class="linkNavA" href="#skillSection">Skills</a>
+            <a class="linkNavA" href="#projectSection">Projects</a>
+            <a class="linkNavA" href="#contactSection">Contact Me</a>
+            <button onclick="toggleDarkMode()" class="themeToggle" id="themeToggleButton">
+                <img src="assets/catrose.png" alt="Theme Toggle Image" id="themeToggleLight">
+            </button>
+        </nav>
+    </header>
+    <main class="sectionBody">
+        <section class="aboutMe lightElement" id="aboutSection">
+            <div id="aboutMeText">
+                <h2 class="sectionTitle">Hi, I'm Adam</h2>
+                <p class="sectionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, culpa.</p>
+            </div>
+            <img src="assets/yuh.jpg" alt="Image of Me" id="aboutMeImg">
+        </section>
+        <section class="mySkills lightElement" id="skillSection">
+            <h2 class="sectionTitle">My Skills</h2>
+        </section>
+        <section class="myProjects lightElement" id="projectSection">
+            <h2 class="sectionTitle">My Projects</h2>
+            <div class="projectShowcase">
+                <div class="projectCard card1">
+                    <h3 class="projectCardTitle">Project title 1</h3>
+                    <img src="assets/stare.png" alt="Image of project 1" class="projectCardImage" id="ratStare">
+                    <p class="projectCardDescription">Description of my project</p>
+                </div>
+                <div class="projectCard card2">
+                    <h3 class="projectCardTitle">Project title 2</h3>
+                    <img src="assets/stare.png" alt="Image of project 2" class="projectCardImage" id="ratStare">
+                    <p class="projectCardDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum sequi amet dolorem, nesciunt corrupti fugiat quos suscipit dolores porro blanditiis, reprehenderit placeat, cupiditate dicta ipsam.</p>
+                </div>
+                <div class="projectCard card3">
+                    <h3 class="projectCardTitle">Project title 3</h3>
+                    <img src="assets/stare.png" alt="Image of project 3" class="projectCardImage" id="ratStare">
+                    <p class="projectCardDescription">Description of my project</p>
+                </div>
+            </div>
+        </section>
+        <section class="contactMe lightElement" id="contactSection">
+            <h2 class="sectionTitle">Contact Me</h2>
+        </section>
+    </main>
+    <footer class="mainFooter">
+
+    </footer>
+</body>
+</html>
