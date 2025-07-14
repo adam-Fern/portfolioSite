@@ -1,0 +1,240 @@
+*{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    color: 	#657b83;
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    background-color: #fdf6e3;
+    margin: 0 0;
+    /* overflow: hidden; */
+}
+
+main{
+    margin: 0 15%;
+}
+
+.darkModeBody{
+    background-color: #073642;
+    color: white;
+}
+
+#mainHeader{
+    display: flex;
+    z-index: 999;
+    top: 0;
+    position: sticky;
+    /* margin: 0 -22%; */
+    padding: 0 10%;
+    border-bottom: 2px solid #657b83;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.linkNav{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 3rem;
+}
+
+.linkNavA{
+    /* border: 2px solid#268bd2; */
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    transition: ease 0.3s;
+}
+
+.linkNavA:hover{
+    background-color: #2aa198;
+    color: #002b36;
+}
+
+.themeToggle{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #93a1a1;
+}
+
+.themeToggle:hover{
+    cursor: pointer;
+}
+
+#themeToggleLight{
+    width: 2rem;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aboutMe, .mySkills, .myProjects, .myCertificates, .contactMe{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10rem 0;
+    align-items: center;
+    box-shadow: 0rem 0.1rem 0.3rem #0000008c;
+}
+
+.aboutMe{
+    padding: 20% 5rem;
+    margin-top: 5rem;
+    scroll-margin-top: 8rem;
+}
+
+#aboutMeImg{
+    width: 10rem;
+    border-radius: 8px;
+}
+
+.mySkills, .myProjects, .myCertificates, .contactMe{
+    padding: 3rem 5rem;
+    flex-direction: column;
+    translate: 0 5rem;
+}
+
+#skillsBox{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+    /* border: 3px solid black; */
+}
+
+.skillsImg{
+    /* margin-left: 3rem; */
+    width: 3rem;
+    transition: scale 0.3s ease;
+}
+
+.skillsImg:hover{
+    scale: 1.5;
+}
+
+.skillsImg:hover + .logoHoverText{
+    display: flex;
+    position: absolute;
+    top: 100%;
+}
+
+.logoHoverText{
+    display: none;
+    z-index: 1;
+    text-align: center;
+}
+
+.certificateImg{
+    width: 30rem;
+    transition: scale 0.3s ease;
+}
+
+.certificateImg:hover{
+    scale: 1.3;
+}
+
+.projectShowcase{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projectCard{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #2aa198;
+    margin: 20px 2vh;
+    padding: 3px;
+    width: 15rem;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    transition: ease 0.3s;
+    box-shadow: 0rem 0.1rem 0.3rem #0000008c;
+}
+
+.projectCardDescription, .projectCardTitle{
+    color: black;
+}
+
+.projectCard:hover{
+    transform: scale(1.1);
+}
+
+#ratStare{
+    width: 10rem;
+}
+
+
+
+.toFade{
+    opacity: 0;
+    transition: translate 0.5s ease-in, opacity 0.5s ease-in;
+    scroll-margin-top: 13rem;
+}
+
+.fadeIn{
+    translate: 0;
+    opacity: 1;
+    scroll-margin-top: 8rem;
+}
+
+.lightElement{
+    background-color: #eee8d5;
+}
+
+.darkElement{
+    background-color: #002b36;
+}
+
+@media(max-width:1200px){
+    main{
+        margin: 0 10%;
+    }
+
+    .mySkills, .myProjects, .contactMe{
+        padding: 1rem 3rem;
+    }
+    #mainHeader{
+        padding: 0 1rem;
+    }
+}
+
+@media(max-width:768px){
+    main{
+        margin: 0 2%;
+    }
+    #mainHeader{
+        position: static;
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .mySkills, .myProjects, .contactMe{
+        padding: 1rem 1rem;
+    }
+    .aboutMe{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .linkNav{
+        flex-direction: column;
+    }
+    .certificateImg{
+        width: 20rem;
+    }
+}
