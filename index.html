@@ -24,38 +24,61 @@
         </nav>
     </header>
     <main class="sectionBody">
-        <section class="aboutMe lightElement" id="aboutSection">
+        <section class="aboutMe lightElement toFade" id="aboutSection">
             <div id="aboutMeText">
                 <h2 class="sectionTitle">Hi, I'm Adam</h2>
-                <p class="sectionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, culpa.</p>
+                <p class="sectionText">An aspiring software developer currently working in the financial industry, creating IT solutions for clients to make their everyday lives easier.</p>
             </div>
-            <img src="assets/yuh.jpg" alt="Image of Me" id="aboutMeImg">
+            <img src="assets/selfie.jpg" alt="Image of Me" id="aboutMeImg">
         </section>
-        <section class="mySkills lightElement" id="skillSection">
+        <section class="mySkills lightElement toFade" id="skillSection">
             <h2 class="sectionTitle">My Skills</h2>
+            <div id="skillsBox">
+                <img class="skillsImg" id="htmlLogo" src="./assets/htmllogo.png" alt="HTML">
+                <label class="logoHoverText" for="htmlLogo">HTML</label>
+                <img class="skillsImg" id="cssLogo" src="./assets/csslogo.png" alt="CSS">
+                <label class="logoHoverText" for="cssLogo">CSS</label>
+                <img class="skillsImg" id="jsLogo" src="./assets/jslogo.png" alt="Javascript">
+                <label class="logoHoverText" for="jsLogo">JavaScript</label>
+                <img class="skillsImg" id="pythonLogo" src="./assets/pythonlogo.png" alt="Python">
+                <label class="logoHoverText" for="pythonLogo">Python</label>
+                <img class="skillsImg" id="cplusLogo" src="./assets/cpluslogo.png" alt="C++">
+                <label class="logoHoverText" for="cplusLogo">C++</label>
+                <img class="skillsImg" id="csLogo" src="./assets/cslogo.png" alt="C#">
+                <label class="logoHoverText" for="csLogo">C#</label>
+                <img class="skillsImg" id="vbLogo" src="./assets/vblogo.png" alt="Visual Basic">
+                <label class="logoHoverText" for="vbLogo">Visual Basic</label>
+            </div>
         </section>
-        <section class="myProjects lightElement" id="projectSection">
+        <section class="myCertificates lightElement toFade" id="certificateSection">
+            <h2 class="sectionTitle">My Certificates</h2>
+            <div id="certBox">
+                <img src="./assets/csCertificate.png" class="certificateImg" alt="Windows C# Certification">
+            </div>
+        </section>
+        <section class="myProjects lightElement toFade" id="projectSection">
             <h2 class="sectionTitle">My Projects</h2>
             <div class="projectShowcase">
                 <div class="projectCard card1">
-                    <h3 class="projectCardTitle">Project title 1</h3>
-                    <img src="assets/stare.png" alt="Image of project 1" class="projectCardImage" id="ratStare">
-                    <p class="projectCardDescription">Description of my project</p>
+                    <h3 class="projectCardTitle">Number Guessing Game</h3>
+                    <img src="assets/numberScreenshot.png" alt="Image of project 1" class="projectCardImage" id="ratStare">
+                    <p class="projectCardDescription">This web or c# game, gives the user 5 chances to guess a random number from 1-100, giving clues based upon their difference to the correct number.</p>
                 </div>
                 <div class="projectCard card2">
-                    <h3 class="projectCardTitle">Project title 2</h3>
-                    <img src="assets/stare.png" alt="Image of project 2" class="projectCardImage" id="ratStare">
-                    <p class="projectCardDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum sequi amet dolorem, nesciunt corrupti fugiat quos suscipit dolores porro blanditiis, reprehenderit placeat, cupiditate dicta ipsam.</p>
+                    <h3 class="projectCardTitle">Outlook Email-Saver</h3>
+                    <img src="assets/outlookScreenshot.png" alt="Image of project 2" class="projectCardImage" id="ratStare">
+                    <p class="projectCardDescription">Created for my workplace, this Visual Basic Outlook Add-In allows users to save emails to their file system for easy recording and sorting of all outgoing, and incoming emails.</p>
                 </div>
                 <div class="projectCard card3">
-                    <h3 class="projectCardTitle">Project title 3</h3>
-                    <img src="assets/stare.png" alt="Image of project 3" class="projectCardImage" id="ratStare">
-                    <p class="projectCardDescription">Description of my project</p>
+                    <h3 class="projectCardTitle">Xero Overpayment to Invoice Matcher (WIP)</h3>
+                    <img src="assets/xeroScreenshot.png" alt="Image of project 3" class="projectCardImage" id="ratStare">
+                    <p class="projectCardDescription">Created for my workplace, this Visual Basic Windows Form App connects with Xero using SQL in order to match any client overpayments made, to the oldest possible invoices, paying off multiple invoices where possible.</p>
                 </div>
             </div>
         </section>
-        <section class="contactMe lightElement" id="contactSection">
+        <section class="contactMe lightElement toFade" id="contactSection">
             <h2 class="sectionTitle">Contact Me</h2>
+            <p class="contactText">admfern3@gmail.com</p>
         </section>
     </main>
     <footer class="mainFooter">
